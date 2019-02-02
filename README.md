@@ -4,4 +4,4 @@
 
 ## Preview
 
-<https://warsawjs.github.io/meetup-slides-template>
+<https://yauheni-blr.github.io/react-hook-survey>
