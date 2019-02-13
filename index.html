@@ -40,6 +40,11 @@
         .custom-code > span.token.string {
             color: #d8d8d8;
         }
+
+        .list-links > li {
+            font-size: 24px;
+            line-height: 40px;
+        }
     </style>
 </head>
 <body class="shower list">
@@ -117,31 +122,28 @@
         </pre>
     </section>
 
-    <section class="slide prism">
-        <h2>Api</h2>
-        <pre style="font-size: 27px;" class="language-javascript line-numbers">
-            <code class="custom-code" style="line-height: 38px;">
-                type HookType =
-                    | 'useState'
-                    | 'useReducer'
-                    | 'useContext'
-                    | 'useRef'
-                    | 'useEffect'
-                    | 'useLayoutEffect'
-                    | 'useCallback'
-                    | 'useMemo'
-                    | 'useImperativeHandle'
-                    | 'useDebugValue';
-            </code>
-        </pre>
-    </section>
-
     <section class="slide">
         <h2 class="shout">code .</h2>
     </section>
 
     <section class="slide">
         <h2 class="shout">Q&A</h2>
+    </section>
+
+    <section class="slide compact">
+        <h2>Links</h2>
+        <ul class="list-links">
+            <li>useState: <a href="https://stackblitz.com/edit/react-hook-use-state" target="_blank">https://stackblitz.com/edit/react-hook-use-state</a></li>
+            <li>useEffect: <a href="https://stackblitz.com/edit/react-hook-use-effect" target="_blank">https://stackblitz.com/edit/react-hook-use-effect</a></li>
+            <li>useReducer: <a href="https://stackblitz.com/edit/react-hook-use-reducer" target="_blank">https://stackblitz.com/edit/react-hook-use-reducer</a></li>
+            <li>useRef: <a href="https://stackblitz.com/edit/react-hook-use-ref" target="_blank">https://stackblitz.com/edit/react-hook-use-ref</a></li>
+            <li>useLayoutEffect: <a href="https://stackblitz.com/edit/react-hook-use-layout-effect" target="_blank">https://stackblitz.com/edit/react-hook-use-layout-effect</a></li>
+            <li>useImperativeMethods: <a href="https://stackblitz.com/edit/react-hook-use-imperative-handle" target="_blank">https://stackblitz.com/edit/react-hook-use-imperative-handle</a></li>
+            <li>useCallback & useMemo: <a href="https://stackblitz.com/edit/react-hook-use-callback-and-memo" target="_blank">https://stackblitz.com/edit/react-hook-use-callback-and-memo</a></li>
+            <li>useContext: <a href="https://stackblitz.com/edit/react-hook-use-context" target="_blank">https://stackblitz.com/edit/react-hook-use-context</a></li>
+            <li>state-manager: <a href="https://stackblitz.com/edit/react-state-manager" target="_blank">https://stackblitz.com/edit/react-state-manager</a></li>
+        </ul>
+    
     </section>
 
     <section class="slide">
@@ -162,16 +164,5 @@
     <!-- Prism.js -->
     <script src="vendors/prism/prism.js"></script>
     <script src="vendors/prism/custom-prism.js"></script>
-
-    <script>
-        setTimeout(() => {
-            const nodes = document.querySelectorAll('.custom-code > span.token.string');
-            const target = [0, 1, 2, 4, 9]
-
-            target.forEach(t => {
-                nodes[t].style.color = '#690';
-            });
-        }, 0)
-    </script>
 </body>
 </html>
